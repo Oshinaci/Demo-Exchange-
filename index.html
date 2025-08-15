@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC/USD Live</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BTC/USD Live</h1>
+        <span id="price">Loading...</span>
+    </header>
+    <small>Data: Binance (BTCUSDT)</small>
+
+    <!-- Chart -->
+    <div id="chart"></div>
+
+    <!-- Order Book -->
+    <section>
+        <h2>Order Book <span>Top 10 Bids / Asks</span></h2>
+        <div class="order-book">
+            <table id="bids">
+                <thead><tr><th>Bids</th></tr></thead>
+                <tbody></tbody>
+            </table>
+            <table id="asks">
+                <thead><tr><th>Asks</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Trade History -->
+    <section>
+        <h2>Trade History <span>30 transaksi terakhir</span></h2>
+        <table id="trades">
+            <thead>
+                <tr><th>Price</th><th>Qty</th><th>Time</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
