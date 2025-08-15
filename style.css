@@ -18,7 +18,7 @@ header {
 }
 
 #chart {
-    height: 50vh; /* Setengah layar di portrait */
+    height: 100vh; /* Setengah layar di portrait */
     margin: 10px 0;
 }
 
