@@ -1,0 +1,59 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#chart {
+    height: 50vh; /* Setengah layar di portrait */
+    margin: 10px 0;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.order-book {
+    display: flex;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #222;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+td.green { color: #00ff00; }
+td.red { color: #ff0000; }
+
+/* Fullscreen kalau landscape */
+@media (orientation: landscape) {
+    #chart {
+        height: 90vh; /* Hampir full layar */
+    }
+    section {
+        display: none; /* Sembunyikan tabel di landscape */
+    }
+}
